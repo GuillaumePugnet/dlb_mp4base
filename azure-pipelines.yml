@@ -15,7 +15,8 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: CmdLine@2
+- task: VSBuild@1
   inputs:
-    script: 'devenv mp4muxer_2010.sln /rebuild release'
-    workingDirectory: 'make/mp4muxer/windows_amd64/'
+    solution: 'make/mp4muxer/windows_amd64/mp4muxer_2010.sln'
+    vsVersion: '17.0'
+    configuration: 'release'
