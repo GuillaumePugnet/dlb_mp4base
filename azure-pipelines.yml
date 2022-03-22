@@ -18,4 +18,4 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'devenv mp4muxer_2010.sln /rebuild release'
-    workingDirectory: 'dlb_mp4base/make/mp4muxer/windows_amd64/'
+    workingDirectory: 'make/mp4muxer/windows_amd64/'
